@@ -6,9 +6,7 @@ portion_down_payment = 0.25
 current_savings = 0.0
 r = 0.04
 
-monthly_savings = (annual_salary*portion_saved)/12
-months = total_cost/monthly_savings
-years = months/12
+#Here we calculate the total amount of months it will take to pay the full amount
+print("Number of months:", int(total_cost/(annual_salary*portion_saved/12)))
 
-print("Number of months:", int(months))
-print("Number of years:", "%.1f" % round(years, 1))
+# print("Number of years:", "%.1f" % round(years, 1))                                                    
